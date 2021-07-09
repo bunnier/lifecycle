@@ -1,5 +1,7 @@
 # lifecycle[WIP]
 
+[![Go](https://github.com/bunnier/lifecycle/actions/workflows/go.yml/badge.svg)](https://github.com/bunnier/lifecycle/actions/workflows/go.yml)
+
 服务生命周期管理~
 
 ```go
