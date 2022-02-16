@@ -1,4 +1,4 @@
-# lifecycle[WIP]
+# lifecycle
 
 [![Go](https://github.com/bunnier/lifecycle/actions/workflows/go.yml/badge.svg)](https://github.com/bunnier/lifecycle/actions/workflows/go.yml)
 
