@@ -1,10 +1,3 @@
-# lifecycle[WIP]
-
-[![Go](https://github.com/bunnier/lifecycle/actions/workflows/go.yml/badge.svg)](https://github.com/bunnier/lifecycle/actions/workflows/go.yml)
-
-服务生命周期管理，可用于同步多个服务的启停等~
-
-```go
 package main
 
 import (
@@ -31,7 +24,7 @@ func main() {
 		Handler: nil,
 	}
 
-	// 托管上面3个服务，一起启停。
+	// 托管上面 3 个服务，一起启停。
 	app := lifecycle.NewApp(
 		lifecycle.WithGrpcServer(grpcServer),
 		lifecycle.WithHttpServer(httpServer1),
@@ -40,7 +33,7 @@ func main() {
 	)
 
 	time.AfterFunc(time.Second*5, func() {
-		app.Stop() // 5s后退出所有服务。
+		app.Stop() // 5s 后退出所有服务。
 	})
 
 	// 开始服务。
@@ -50,4 +43,3 @@ func main() {
 
 	fmt.Println("App exited.")
 }
-```
